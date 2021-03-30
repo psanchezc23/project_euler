@@ -1,4 +1,5 @@
 import numpy as np
+import time
 
 
 def exercise_001(numbers, maximum_value):
@@ -21,7 +22,10 @@ def exercise_001(numbers, maximum_value):
 
 
 if __name__ == "__main__":
+    start_time = time.time()
     numbers = np.array([3, 5])
     maximum_value = 1000
     print(exercise_001(numbers, maximum_value))
+    end_time = time.time()
+    print('{} s'.format(end_time - start_time))
 

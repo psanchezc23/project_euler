@@ -1,4 +1,5 @@
 import numpy as np
+import time
 
 
 def exercise_002(maximum_value):
@@ -14,21 +15,22 @@ def exercise_002(maximum_value):
 
     """
 
-    def _next_value(array):
-        return np.sum(array[-2:])
-
     fibonacci = [1, 1]
-    n = _next_value(fibonacci)
-    while n < maximum_value:
+    cum_sum = 0
+    for i in range(maximum_value):
+        n = np.sum(fibonacci[-2:])
+        if n > maximum_value:
+            break
         fibonacci.append(n)
-        n = _next_value(fibonacci)
+        if (n % 2) == 0:
+            cum_sum += n
 
-    fibonacci = np.array(fibonacci)
-    idx = (fibonacci % 2) == 0
-
-    return np.sum(fibonacci[idx])
+    return cum_sum
 
 
 if __name__ == "__main__":
+    start_time = time.time()
     maximum_value = 4000000
     print(exercise_002(maximum_value))
+    end_time = time.time()
+    print('{} s'.format(end_time - start_time))
