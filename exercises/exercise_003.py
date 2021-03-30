@@ -1,4 +1,5 @@
 import numpy as np
+import time
 
 
 def exercise_003(number):
@@ -11,25 +12,26 @@ def exercise_003(number):
 
     """
 
-    while (number % 2) == 0:
+    max_prime = 1
+
+    while number % 2 == 0:
         number /= 2
+        max_prime = 2
 
-    primes = np.arange(3, int(number / 2), 2)
-    is_prime = np.ones(len(primes), dtype=bool)
-    i = 0
-    while np.any(is_prime[i:]) and i < (len(is_prime)-1):
-        if is_prime[i]:
-            n = primes[i]
-            is_prime[(i+1):] &= (primes[(i+1):] % n) != 0
-        i += 1
+    for i in range(3, int(np.sqrt(number))+1, 2):
+        while (number % i) == 0:
+            number /= i
+            max_prime = max(max_prime, i)
 
-    primes = primes[is_prime]
+    if number > 2:
+        max_prime = max(number, max_prime)
 
-    is_divisor = number % primes == 0
-
-    return max(primes[is_divisor])
+    return max_prime
 
 
 if __name__ == '__main__':
+    start_time = time.time()
     number = 600851475143  # 13195
     print(exercise_003(number))
+    end_time = time.time()
+    print('{} s'.format(end_time - start_time))
