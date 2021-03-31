@@ -23,8 +23,6 @@ def exercise_009(triplet_sum):
             c = np.sqrt(a ** 2 + b ** 2)
 
             if a + b + c == triplet_sum:
-                print('a < b < c')
-                print('{a} < {b} < {c}'.format(a=a, b=b, c=c))
                 return a * b * c
 
     return 0

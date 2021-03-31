@@ -62,7 +62,7 @@ def exercise_008(n_digits):
 
     max_prod = np.prod([int(d) for d in number_str[:n_digits]]).astype(np.int64)
     for start in range(n_digits, len(number_str)-n_digits+1):
-        numbers = list(map(np.int64, re.findall('([\d+]{1})', number_str[start:start+n_digits])))
+        numbers = list(map(np.int64, re.findall(r'([\d+]{1})', number_str[start:start+n_digits])))
         prod = np.prod(numbers)
         max_prod = max(max_prod, prod)
 
@@ -71,7 +71,7 @@ def exercise_008(n_digits):
 
 if __name__ == '__main__':
     start_time = time.time()
-    n_prime = 13  # 4
-    print(exercise_008(n_prime))
+    n_digits = 13  # 4
+    print(exercise_008(n_digits))
     end_time = time.time()
     print('{} s'.format(end_time - start_time))
