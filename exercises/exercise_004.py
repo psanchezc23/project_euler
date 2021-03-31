@@ -14,7 +14,7 @@ def exercise_004(n_digits):
 
     """
 
-    digits_nums_range = range(10 ** (n_digits-1) - 1, 10 ** n_digits - 1, 1)
+    digits_nums_range = range(10 ** (n_digits-1) - 1, 10 ** n_digits, 1)
 
     max_mult = 0
     for num_1 in digits_nums_range:
@@ -29,7 +29,7 @@ def exercise_004(n_digits):
 
 if __name__ == '__main__':
     start_time = time.time()
-    digits = 3  # 2
+    digits = 2  # 2
     print(exercise_004(digits))
     end_time = time.time()
     print('{} s'.format(end_time - start_time))
