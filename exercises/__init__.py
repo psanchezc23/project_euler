@@ -9,3 +9,6 @@ from . import exercise_008
 from . import exercise_009
 from . import exercise_010
 
+from . import exercise_012
+from . import exercise_013
+from . import exercise_014

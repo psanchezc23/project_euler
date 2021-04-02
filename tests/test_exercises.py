@@ -98,3 +98,25 @@ def test_exercise_010():
     number = 2000000
     solution = exercises.exercise_010.exercise_010(number)
     assert solution == 142913828922
+
+
+def test_exercise_012():
+    n_divisors = 5
+    solution = exercises.exercise_012.exercise_012(n_divisors)
+    assert solution == 28
+
+    n_divisors = 500
+    solution = exercises.exercise_012.exercise_012(n_divisors)
+    assert solution == 76576500
+
+
+def test_exercise_013():
+    number = 10
+    solution = exercises.exercise_013.exercise_013(number)
+    assert solution == '5537376230'
+
+
+def test_exercise_014():
+    initial_number = 1000000
+    solution = exercises.exercise_014.exercise_014(initial_number)
+    assert solution == (837799, 525)
