@@ -3,14 +3,18 @@ import time
 
 def exercise_005(n_divisors):
     """
-    2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+    2520 is the smallest number that can be divided by each of the numbers
+    from 1 to 10 without any remainder.
 
-    What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+    What is the smallest positive number that is evenly divisible by all of
+    the numbers from 1 to 20?
 
-    :param int n_divisors: Number of divisors
-    :return: smallest positive number that is evenly divisible by all of the numbers from 1 to <n_divisors>.
+    :param n_divisors: Number of divisors
+    :type n_divisors: int
+
+    :return: smallest positive number that is evenly divisible by all of the
+    numbers from 1 to <n_divisors>.
     :rtype: int
-
     """
 
     divisors = range(1, n_divisors+1)

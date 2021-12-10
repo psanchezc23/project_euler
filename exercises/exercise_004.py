@@ -3,15 +3,17 @@ import time
 
 def exercise_004(n_digits):
     """
-    A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers
-    is 9009 = 91 × 99.
+    A palindromic number reads the same both ways. The largest palindrome made
+    from the product of two 2-digit numbers is 9009 = 91 × 99.
 
     Find the largest palindrome made from the product of two 3-digit numbers.
 
-    :param int n_digits: Digits of numbers to multiply.
-    :return: largest palindrome made from the product of two <digits>-digit numbers.
-    :rtype: int
+    :param n_digits: Digits of numbers to multiply.
+    :type n_digits: int
 
+    :return: largest palindrome made from the product of two <digits>-digit
+    numbers.
+    :rtype: int
     """
 
     digits_nums_range = range(10 ** (n_digits-1) - 1, 10 ** n_digits, 1)
