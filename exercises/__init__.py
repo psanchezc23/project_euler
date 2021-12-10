@@ -12,3 +12,14 @@ from . import exercise_010
 from . import exercise_012
 from . import exercise_013
 from . import exercise_014
+from . import exercise_015
+from . import exercise_016
+from . import exercise_017
+from . import exercise_018
+from . import exercise_019
+
+from . import exercise_021
+from . import exercise_022
+from . import exercise_023
+from . import exercise_024
+from . import exercise_025

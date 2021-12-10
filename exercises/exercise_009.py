@@ -4,7 +4,8 @@ import numpy as np
 
 def exercise_009(triplet_sum):
     """
-    A Pythagorean triplet is a set of three natural numbers, a < b < c, for which,
+    A Pythagorean triplet is a set of three natural numbers, a < b < c, for
+    which,
 
         a^2 + b^2 = c^2
     For example, 3^2 + 4^2 = 9 + 16 = 25 = 5^2.
@@ -13,9 +14,10 @@ def exercise_009(triplet_sum):
     Find the product abc.
 
     :param int triplet_sum: Sum of Pythagorean triplet
+    :type triplet_sum: int
+
     :return: product of abc that sums <triplet_sum>.
     :rtype: int
-
     """
 
     for b in range(1, triplet_sum):

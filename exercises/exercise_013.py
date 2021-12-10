@@ -5,7 +5,8 @@ import re
 
 def exercise_013(n_digits):
     """
-    Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.
+    Work out the first ten digits of the sum of the following one-hundred
+    50-digit numbers.
 
     37107287533902102798797998220837590246510135740250
     46376937677490009712648124896970078050417018260538
@@ -108,10 +109,11 @@ def exercise_013(n_digits):
     20849603980134001723930671666823555245252804609722
     53503534226472524250874054075591789781264330331690
 
-    :param int n_digits: Number of digits to return.
+    :param n_digits: Number of digits to return.
+    :type n_digits: int
+
     :return: The first <n_digits> of the sum of the previous numbers.
     :rtype: int
-
     """
 
     numbers = """
@@ -219,11 +221,9 @@ def exercise_013(n_digits):
 
     numbers = [np.int(n) for n in numbers]
 
+    cum_sum = 0
     for i in range(len(numbers)):
-        if i == 0:
-            cum_sum = numbers[i]
-        else:
-            cum_sum += numbers[i]
+        cum_sum += numbers[i]
 
     cum_sum_str = '{}'.format(cum_sum)[:n_digits]
     return cum_sum_str

@@ -4,14 +4,17 @@ import time
 
 def exercise_001(numbers, maximum_value):
     """
-    If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these
-    multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.
+    If we list all the natural numbers below 10 that are multiples of 3 or 5,
+    we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of
+    all the multiples of 3 or 5 below 1000.
 
-    :param array-like numbers: The values should be multiples of these numbers.
-    :param int maximum_value: Maximum number to look for multiples.
+    :param numbers: The values should be multiples of these numbers.
+    :type numbers: array-like
+    :param maximum_value: Maximum number to look for multiples.
+    :type maximum_value: int
+
     :return: It returns the sum of the multiples of the numbers.
     :rtype: int
-
     """
 
     vector = np.arange(maximum_value)

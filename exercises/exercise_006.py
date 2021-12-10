@@ -9,15 +9,17 @@ def exercise_006(n_natural):
     The square of the sum of the first ten natural numbers is,
         (1 + 2 + 3 + ... + 10)^2 = 55^2 = 3025
 
-    Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is
-    3025 - 385 = 2640. Find the difference between the sum of the squares of the first one hundred natural numbers and
-    the square of the sum.
+    Hence the difference between the sum of the squares of the first ten
+    natural numbers and the square of the sum is 3025 - 385 = 2640. Find the
+    difference between the sum of the squares of the first one hundred natural
+    numbers and the square of the sum.
 
-    :param int n_natural: Number of natural numbers
-    :return: difference between the sum of the squares of the first <n_natural> natural numbers and
-    the square of the sum.
+    :param n_natural: Number of natural numbers
+    :type n_natural: int
+
+    :return: difference between the sum of the squares of the first
+    <n_natural> natural numbers and the square of the sum.
     :rtype: int
-
     """
 
     cumsum = 0

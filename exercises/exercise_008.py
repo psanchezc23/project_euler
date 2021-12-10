@@ -5,7 +5,8 @@ import re
 
 def exercise_008(n_digits):
     """
-    The four adjacent digits in the 1000-digit number that have the greatest product are 9 × 9 × 8 × 9 = 5832.
+    The four adjacent digits in the 1000-digit number that have the greatest
+    product are 9 × 9 × 8 × 9 = 5832.
 
         73167176531330624919225119674426574742355349194934
         96983520312774506326239578318016984801869478851843
@@ -28,13 +29,15 @@ def exercise_008(n_digits):
         05886116467109405077541002256983155200055935729725
         71636269561882670428252483600823257530420752963450
 
-    Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of
+    Find the thirteen adjacent digits in the 1000-digit number that have the
+    greatest product. What is the value of
     this product?
 
-    :param int n_digits: Number of digits to compute the product.
+    :param n_digits: Number of digits to compute the product.
+    :type n_digits: int
+
     :return: greatest product of <n-digits> consecutive digits.
     :rtype: int
-
     """
 
     number_str = """
@@ -60,9 +63,14 @@ def exercise_008(n_digits):
         71636269561882670428252483600823257530420752963450
     """.replace('\n', '').replace(' ', '')
 
-    max_prod = np.prod([int(d) for d in number_str[:n_digits]]).astype(np.int64)
+    max_prod = np.prod(
+        [int(d) for d in number_str[:n_digits]]
+    ).astype(np.int64)
     for start in range(n_digits, len(number_str)-n_digits+1):
-        numbers = list(map(np.int64, re.findall(r'([\d+]{1})', number_str[start:start+n_digits])))
+        numbers = list(map(
+            np.int64,
+            re.findall(r'([\d+]{1})', number_str[start:start+n_digits])
+        ))
         prod = np.prod(numbers)
         max_prod = max(max_prod, prod)
 
