@@ -1,6 +1,4 @@
 import time
-import numpy as np
-import re
 
 
 def exercise_014(number_limit):
@@ -30,7 +28,8 @@ def exercise_014(number_limit):
     :rtype: int
     """
 
-    collatz_next_number = lambda num: num / 2 if num % 2 == 0 else 3 * num + 1
+    def collatz_next_number(num):
+        return  num / 2 if num % 2 == 0 else 3 * num + 1
 
     maximum_number = 0
     maximum_number_len_chain = 0

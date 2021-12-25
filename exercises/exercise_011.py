@@ -18,7 +18,7 @@ def exercise_011():
     """
 
     with open("../files/exercise_011.txt", "r") as f:
-        matrix = [list(map(int, l.split(" "))) for l in f.readlines()]
+        matrix = [list(map(int, line.split(" "))) for line in f.readlines()]
     matrix = np.matrix(matrix)
 
     n_row = matrix.shape[0]

@@ -1,6 +1,6 @@
 import time
+
 import numpy as np
-import re
 
 
 def exercise_013(n_digits):
