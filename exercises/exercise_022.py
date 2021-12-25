@@ -1,4 +1,5 @@
 import time
+
 import numpy as np
 
 
@@ -41,7 +42,6 @@ def exercise_022():
 if __name__ == '__main__':
 
     start_time = time.time()
-    number_limit = 10000
     print(exercise_022())
     end_time = time.time()
     print('{} s'.format(end_time - start_time))
