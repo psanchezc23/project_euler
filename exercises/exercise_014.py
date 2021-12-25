@@ -29,7 +29,7 @@ def exercise_014(number_limit):
     """
 
     def collatz_next_number(num):
-        return  num / 2 if num % 2 == 0 else 3 * num + 1
+        return num / 2 if num % 2 == 0 else 3 * num + 1
 
     maximum_number = 0
     maximum_number_len_chain = 0

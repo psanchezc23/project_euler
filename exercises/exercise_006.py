@@ -51,4 +51,3 @@ if __name__ == '__main__':
     print(exercise_006_best(n_natural))
     end_time = time.time()
     print('{} s'.format(end_time - start_time))
-
