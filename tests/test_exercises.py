@@ -15,7 +15,7 @@ def check_time_exercises(exercise_function, *args):
 
 
 def test_exercise_001():
-    exercise_function = exercises.exercise_001.exercise_001
+    exercise_function = exercises.exercise_001
     numbers = np.array([3, 5])
     maximum_value = 10
     solution = exercise_function(numbers, maximum_value)
@@ -30,7 +30,7 @@ def test_exercise_001():
 
 
 def test_exercise_002():
-    exercise_function = exercises.exercise_002.exercise_002
+    exercise_function = exercises.exercise_002
 
     maximum_value = 4000000
     solution = exercise_function(maximum_value)
@@ -40,7 +40,7 @@ def test_exercise_002():
 
 
 def test_exercise_003():
-    exercise_function = exercises.exercise_003.exercise_003
+    exercise_function = exercises.exercise_003
 
     number = 13195
     solution = exercise_function(number)
@@ -54,7 +54,7 @@ def test_exercise_003():
 
 
 def test_exercise_004():
-    exercise_function = exercises.exercise_004.exercise_004
+    exercise_function = exercises.exercise_004
 
     digits = 2
     solution = exercise_function(digits)
@@ -68,7 +68,7 @@ def test_exercise_004():
 
 
 def test_exercise_005():
-    exercise_function = exercises.exercise_005.exercise_005
+    exercise_function = exercises.exercise_005
 
     n_divisors = 10
     solution = exercise_function(n_divisors)
@@ -82,7 +82,7 @@ def test_exercise_005():
 
 
 def test_exercise_006():
-    exercise_function = exercises.exercise_006.exercise_006
+    exercise_function = exercises.exercise_006
 
     n_natural = 10
     solution = exercise_function(n_natural)
@@ -96,7 +96,7 @@ def test_exercise_006():
 
 
 def test_exercise_007():
-    exercise_function = exercises.exercise_007.exercise_007
+    exercise_function = exercises.exercise_007
 
     n_prime = 6
     solution = exercise_function(n_prime)
@@ -110,7 +110,7 @@ def test_exercise_007():
 
 
 def test_exercise_008():
-    exercise_function = exercises.exercise_008.exercise_008
+    exercise_function = exercises.exercise_008
 
     n_digits = 4
     solution = exercise_function(n_digits)
@@ -124,7 +124,7 @@ def test_exercise_008():
 
 
 def test_exercise_009():
-    exercise_function = exercises.exercise_009.exercise_009
+    exercise_function = exercises.exercise_009
 
     triplet_sum = 12
     solution = exercise_function(triplet_sum)
@@ -138,7 +138,7 @@ def test_exercise_009():
 
 
 def test_exercise_010():
-    exercise_function = exercises.exercise_010.exercise_010
+    exercise_function = exercises.exercise_010
 
     number = 10
     solution = exercise_function(number)
@@ -151,8 +151,17 @@ def test_exercise_010():
     check_time_exercises(exercise_function, number)
 
 
+def test_exercise_011():
+    exercise_function = exercises.exercise_011
+
+    solution = exercise_function()
+    assert solution == 70600674
+
+    check_time_exercises(exercise_function)
+
+
 def test_exercise_012():
-    exercise_function = exercises.exercise_012.exercise_012
+    exercise_function = exercises.exercise_012
 
     n_divisors = 5
     solution = exercise_function(n_divisors)
@@ -166,7 +175,7 @@ def test_exercise_012():
 
 
 def test_exercise_013():
-    exercise_function = exercises.exercise_013.exercise_013
+    exercise_function = exercises.exercise_013
 
     number = 10
     solution = exercise_function(number)
@@ -176,7 +185,7 @@ def test_exercise_013():
 
 
 def test_exercise_014():
-    exercise_function = exercises.exercise_014.exercise_014
+    exercise_function = exercises.exercise_014
 
     initial_number = 1000000
     solution = exercise_function(initial_number)
@@ -186,7 +195,7 @@ def test_exercise_014():
 
 
 def test_exercise_015():
-    exercise_function = exercises.exercise_015.exercise_015
+    exercise_function = exercises.exercise_015
 
     solutions = [
         1, 2, 6, 20, 70, 252, 924, 3432, 12870, 48620, 184756, 705432, 2704156,
@@ -205,7 +214,7 @@ def test_exercise_015():
 
 
 def test_exercise_016():
-    exercise_function = exercises.exercise_016.exercise_016
+    exercise_function = exercises.exercise_016
 
     exponent = 15
     solution = exercise_function(exponent)
@@ -218,7 +227,7 @@ def test_exercise_016():
 
 
 def test_exercise_017():
-    exercise_function = exercises.exercise_017.exercise_017
+    exercise_function = exercises.exercise_017
 
     number_limit = 5
     solution = exercise_function(number_limit)
@@ -231,7 +240,7 @@ def test_exercise_017():
 
 
 def test_exercise_018():
-    exercise_function = exercises.exercise_018.exercise_018
+    exercise_function = exercises.exercise_018
 
     solution = exercise_function()
     assert solution == 1074
@@ -240,7 +249,7 @@ def test_exercise_018():
 
 
 def test_exercise_019():
-    exercise_function = exercises.exercise_019.exercise_019
+    exercise_function = exercises.exercise_019
 
     solution = exercise_function()
     assert solution == 171
@@ -248,8 +257,20 @@ def test_exercise_019():
     check_time_exercises(exercise_function)
 
 
+def test_exercise_020():
+    exercise_function = exercises.exercise_020
+
+    solution = exercise_function(10)
+    assert solution == 27
+
+    solution = exercise_function(100)
+    assert solution == 648
+
+    check_time_exercises(exercise_function, 100)
+
+
 def test_exercise_021():
-    exercise_function = exercises.exercise_021.exercise_021
+    exercise_function = exercises.exercise_021
 
     number_limit = 10000
     solution = exercise_function(number_limit)
@@ -259,7 +280,7 @@ def test_exercise_021():
 
 
 def test_exercise_022():
-    exercise_function = exercises.exercise_022.exercise_022
+    exercise_function = exercises.exercise_022
 
     solution = exercise_function()
     assert solution == 871198282
@@ -268,7 +289,7 @@ def test_exercise_022():
 
 
 def test_exercise_023():
-    exercise_function = exercises.exercise_023.exercise_023
+    exercise_function = exercises.exercise_023
 
     solution = exercise_function()
     assert solution == 4179871
@@ -277,7 +298,7 @@ def test_exercise_023():
 
 
 def test_exercise_024():
-    exercise_function = exercises.exercise_024.exercise_024
+    exercise_function = exercises.exercise_024
 
     number_str = "0123456789"
     position = 999999
@@ -288,7 +309,7 @@ def test_exercise_024():
 
 
 def test_exercise_025():
-    exercise_function = exercises.exercise_025.exercise_025
+    exercise_function = exercises.exercise_025
 
     n_digits = 1000
     solution = exercise_function(n_digits)
@@ -296,3 +317,130 @@ def test_exercise_025():
 
     check_time_exercises(exercise_function, n_digits)
 
+
+def test_exercise_028():
+    exercise_function = exercises.exercise_028
+
+    spiral_size = 5
+    solution = exercise_function(spiral_size)
+    assert solution == 101
+
+    spiral_size = 1001
+    solution = exercise_function(spiral_size)
+    assert solution == 669171001
+
+    check_time_exercises(exercise_function, spiral_size)
+
+
+def test_exercise_029():
+    exercise_function = exercises.exercise_029
+
+    solution = exercise_function(2, 5, 2, 5)
+    assert solution == 15
+
+    solution = exercise_function(2, 100, 2, 100)
+    assert solution == 9183
+
+    check_time_exercises(exercise_function, 2, 100, 2, 100)
+
+
+def test_exercise_030():
+    exercise_function = exercises.exercise_030
+
+    n_digits = 4
+    solution = exercise_function(n_digits)
+    assert solution == 19316
+
+    n_digits = 5
+    solution = exercise_function(n_digits)
+    assert solution == 443839
+
+    check_time_exercises(exercise_function, n_digits)
+
+
+def test_exercise_031():
+    exercise_function = exercises.exercise_031
+
+    coins_sum = 5
+    solution = exercise_function(coins_sum)
+    assert solution == 4
+
+    coins_sum = 200
+    solution = exercise_function(coins_sum)
+    assert solution == 73682
+
+    check_time_exercises(exercise_function, coins_sum)
+
+
+def test_exercise_034():
+    exercise_function = exercises.exercise_034
+
+    solution = exercise_function()
+    assert solution == 40730
+
+    check_time_exercises(exercise_function)
+
+
+def test_exercise_036():
+    exercise_function = exercises.exercise_036
+
+    maximum_number = 1000000
+    solution = exercise_function(maximum_number)
+    assert solution == 872187
+
+    check_time_exercises(exercise_function, maximum_number)
+
+
+def test_exercise_037():
+    exercise_function = exercises.exercise_037
+
+    solution = exercise_function()
+    assert solution == 748317
+
+    check_time_exercises(exercise_function)
+
+
+def test_exercise_039():
+    exercise_function = exercises.exercise_039
+
+    solution = exercise_function()
+    assert solution == 840
+
+    check_time_exercises(exercise_function)
+
+
+def test_exercise_040():
+    exercise_function = exercises.exercise_040
+
+    decimal_positions = [1, 10, 100, 1000, 10000, 100000, 1000000]
+    solution = exercise_function(decimal_positions)
+    assert solution == 210
+
+    check_time_exercises(exercise_function, decimal_positions)
+
+
+def test_exercise_041():
+    exercise_function = exercises.exercise_041
+
+    solution = exercise_function()
+    assert solution == 7652413
+
+    check_time_exercises(exercise_function)
+
+
+def test_exercise_042():
+    exercise_function = exercises.exercise_042
+
+    solution = exercise_function()
+    assert solution == 162
+
+    check_time_exercises(exercise_function)
+
+
+def test_exercise_043():
+    exercise_function = exercises.exercise_043
+
+    solution = exercise_function()
+    assert solution == 16695334890
+
+    check_time_exercises(exercise_function)

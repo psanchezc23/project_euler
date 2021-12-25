@@ -44,3 +44,12 @@ def get_divisors(number):
 
 def sum_divisors(number):
     return np.int64(sum(get_divisors(number)))
+
+
+def range_product(lo, hi):
+    if lo + 1 < hi:
+        mid = (hi + lo) // 2
+        return range_product(lo, mid) * range_product(mid + 1, hi)
+    if lo == hi:
+        return lo
+    return lo * hi

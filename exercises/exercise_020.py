@@ -1,5 +1,6 @@
 import time
-import numpy as np
+
+from exercises.utils import range_product
 
 
 def exercise_020(number):
@@ -7,8 +8,7 @@ def exercise_020(number):
     n! means n × (n − 1) × ... × 3 × 2 × 1
 
     For example, 10! = 10 × 9 × ... × 3 × 2 × 1 = 3628800,
-    and the sum of the digits in the number 10! is
-    3 + 6 + 2 + 8 + 8 + 0 + 0 = 27.
+    and the sum of the digits in the number 10! is 3 + 6 + 2 + 8 + 8 + 0 + 0 = 27.
 
     Find the sum of the digits in the number 100!
 
@@ -19,17 +19,17 @@ def exercise_020(number):
     :rtype: int
     """
 
-    # TODO. number too large
-
-    factorial = np.prod(np.arange(1, number + 1)).astype(np.float64)
-    digits = list(map(int, list(str(factorial))))
-    return sum(digits)
+    if number < 2:
+        return 1
+    factorial = range_product(1, number)
+    factorial_digits = list(map(int, list(str(factorial))))
+    return sum(factorial_digits)
 
 
 if __name__ == '__main__':
 
     start_time = time.time()
-    number = 100
+    number = 10
     print(exercise_020(number))
     end_time = time.time()
     print('{} s'.format(end_time - start_time))
