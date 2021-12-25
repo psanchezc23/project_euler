@@ -17,7 +17,7 @@ def exercise_011():
     :rtype: int
     """
 
-    with open("../files/exercise_011.txt", "r") as f:
+    with open("./files/exercise_011.txt", "r") as f:
         matrix = [list(map(int, line.split(" "))) for line in f.readlines()]
     matrix = np.matrix(matrix)
 
