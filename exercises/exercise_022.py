@@ -1,3 +1,4 @@
+import os
 import time
 
 import numpy as np
@@ -24,7 +25,10 @@ def exercise_022():
     :rtype: int
     """
 
-    with open("files/exercise_022.txt", "r") as f:
+    file_path = os.path.join(
+        os.path.dirname(__file__), "files/exercise_022.txt"
+    )
+    with open(file_path, "r") as f:
         names = f.readlines()[0].split(",")
 
     names = sorted(names)

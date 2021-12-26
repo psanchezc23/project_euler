@@ -1,3 +1,4 @@
+import os
 import time
 
 import numpy as np
@@ -17,7 +18,10 @@ def exercise_011():
     :rtype: int
     """
 
-    with open("files/exercise_011.txt", "r") as f:
+    file_path = os.path.join(
+        os.path.dirname(__file__), "files/exercise_011.txt"
+    )
+    with open(file_path, "r") as f:
         matrix = [list(map(int, line.split(" "))) for line in f.readlines()]
     matrix = np.matrix(matrix)
 
