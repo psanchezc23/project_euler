@@ -1,8 +1,6 @@
 import time
 import numpy as np
 
-from exercises.utils import is_prime
-
 
 def exercise_010(number):
     """
