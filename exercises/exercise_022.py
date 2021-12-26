@@ -24,7 +24,7 @@ def exercise_022():
     :rtype: int
     """
 
-    with open("./files/exercise_022.txt", "r") as f:
+    with open("files/exercise_022.txt", "r") as f:
         names = f.readlines()[0].split(",")
 
     names = sorted(names)

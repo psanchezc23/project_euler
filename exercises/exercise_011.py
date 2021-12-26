@@ -5,8 +5,8 @@ import numpy as np
 
 def exercise_011():
     """
-    In the 20×20 grid below, four numbers along a diagonal line have been marked
-    in red.
+    In the 20×20 grid below, four numbers along a diagonal line have been
+    marked in red.
 
     The product of these numbers is 26 × 63 × 78 × 14 = 1788696.
 
@@ -17,7 +17,7 @@ def exercise_011():
     :rtype: int
     """
 
-    with open("./files/exercise_011.txt", "r") as f:
+    with open("files/exercise_011.txt", "r") as f:
         matrix = [list(map(int, line.split(" "))) for line in f.readlines()]
     matrix = np.matrix(matrix)
 
