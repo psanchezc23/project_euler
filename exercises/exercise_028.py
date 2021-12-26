@@ -44,6 +44,6 @@ def exercise_028(spiral_size):
 if __name__ == '__main__':
     start_time = time.time()
     n_digits = 1001
-    print(exercise_027(n_digits))
+    print(exercise_028(n_digits))
     end_time = time.time()
     print('{} s'.format(end_time - start_time))

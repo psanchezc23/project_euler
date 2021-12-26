@@ -39,7 +39,6 @@ def exercise_012(n_divisors):
     while len(triangle_number_divisors) < n_divisors:
         triangle_number += next_number
         next_number += 1
-
         triangle_number_divisors = get_divisors(triangle_number)
 
     return triangle_number

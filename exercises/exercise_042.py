@@ -1,3 +1,4 @@
+import os
 import time
 
 
@@ -24,7 +25,10 @@ def exercise_042():
     :rtype: int
     """
 
-    with open("../files/exercise_042.txt", "r") as f:
+    file_path = os.path.join(
+        os.path.dirname(__file__), "files/exercise_042.txt"
+    )
+    with open(file_path, "r") as f:
         words = f.readlines()[0].split(",")
 
     words_sum = dict.fromkeys(words)
