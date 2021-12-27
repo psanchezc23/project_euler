@@ -444,3 +444,41 @@ def test_exercise_043():
     assert solution == 16695334890
 
     check_time_exercises(exercise_function)
+
+
+def test_exercise_044():
+    exercise_function = exercises.exercise_044
+
+    solution = exercise_function()
+    assert solution == 5482660
+
+    check_time_exercises(exercise_function)
+
+
+def test_exercise_045():
+    exercise_function = exercises.exercise_045
+
+    solution = exercise_function()
+    assert solution == 1533776805
+
+    check_time_exercises(exercise_function)
+
+
+def test_exercise_048():
+    exercise_function = exercises.exercise_048
+
+    maximum_number = 1000
+    solution = exercise_function(maximum_number)
+    assert solution == 9110846700
+
+    check_time_exercises(exercise_function, maximum_number)
+
+
+def test_exercise_049():
+    exercise_function = exercises.exercise_049
+
+    solution = exercise_function()
+    assert "".join(map(str, solution[0])) == "148748178147"
+    assert "".join(map(str, solution[1])) == "296962999629"
+
+    check_time_exercises(exercise_function)
