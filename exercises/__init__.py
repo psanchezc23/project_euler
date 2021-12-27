@@ -41,3 +41,9 @@ from .exercise_040 import exercise_040  # noqa: F401
 from .exercise_041 import exercise_041  # noqa: F401
 from .exercise_042 import exercise_042  # noqa: F401
 from .exercise_043 import exercise_043  # noqa: F401
+from .exercise_044 import exercise_044  # noqa: F401
+from .exercise_045 import exercise_045  # noqa: F401
+
+
+from .exercise_048 import exercise_048  # noqa: F401
+from .exercise_049 import exercise_049  # noqa: F401

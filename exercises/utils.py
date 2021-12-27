@@ -53,3 +53,26 @@ def range_product(lo, hi):
     if lo == hi:
         return lo
     return lo * hi
+
+
+def large_sum(number_1, number_2):
+    """
+    Sum of two large numbers
+    """
+    number_1_rev = str(number_1)[::-1]
+    len_number_1 = len(number_1_rev)
+    number_2_rev = str(number_2)[::-1]
+    len_number_2 = len(number_2_rev)
+
+    carry = 0
+    final_sum = ""
+    for i in range(max(len_number_1, len_number_2)):
+        n1 = int(number_1_rev[i]) if i < len_number_1 else 0
+        n2 = int(number_2_rev[i]) if i < len_number_2 else 0
+        carry, digit = divmod(n1 + n2 + carry, 10)
+        final_sum += str(digit)
+
+    if carry:
+        final_sum += str(carry)
+
+    return final_sum[::-1]

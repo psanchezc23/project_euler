@@ -23,7 +23,7 @@ def exercise_011():
     )
     with open(file_path, "r") as f:
         matrix = [list(map(int, line.split(" "))) for line in f.readlines()]
-    matrix = np.matrix(matrix)
+    matrix = np.array(matrix)
 
     n_row = matrix.shape[0]
     n_col = matrix.shape[1]
