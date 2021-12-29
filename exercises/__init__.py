@@ -23,8 +23,8 @@ from .exercise_022 import exercise_022  # noqa: F401
 from .exercise_023 import exercise_023  # noqa: F401
 from .exercise_024 import exercise_024  # noqa: F401
 from .exercise_025 import exercise_025  # noqa: F401
-
-
+from .exercise_026 import exercise_026  # noqa: F401
+from .exercise_027 import exercise_027  # noqa: F401
 from .exercise_028 import exercise_028  # noqa: F401
 from .exercise_029 import exercise_029  # noqa: F401
 from .exercise_030 import exercise_030  # noqa: F401
@@ -32,7 +32,7 @@ from .exercise_031 import exercise_031  # noqa: F401
 
 
 from .exercise_034 import exercise_034  # noqa: F401
-
+from .exercise_035 import exercise_035  # noqa: F401
 from .exercise_036 import exercise_036  # noqa: F401
 from .exercise_037 import exercise_037  # noqa: F401
 
@@ -47,3 +47,12 @@ from .exercise_045 import exercise_045  # noqa: F401
 
 from .exercise_048 import exercise_048  # noqa: F401
 from .exercise_049 import exercise_049  # noqa: F401
+
+
+from .exercise_052 import exercise_052  # noqa: F401
+from .exercise_053 import exercise_053  # noqa: F401
+from .exercise_054 import exercise_054  # noqa: F401
+
+from .exercise_056 import exercise_056  # noqa: F401
+from .exercise_057 import exercise_057  # noqa: F401
+from .exercise_058 import exercise_058  # noqa: F401

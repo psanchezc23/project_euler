@@ -24,21 +24,11 @@ def exercise_028(spiral_size):
     :rtype: int
     """
 
-    diagonals = {
-        "upper-left": 0,
-        "upper-right": 0,
-        "lower-left": 0,
-        "lower-right": 0
-    }
-
+    diagonals = 1
     for size in range(3, spiral_size + 1, 2):
-        diagonals["upper-right"] += size ** 2
-        diagonals["upper-left"] += size ** 2 - (size - 1)
-        diagonals["lower-left"] += size ** 2 - 2 * (size - 1)
-        diagonals["lower-right"] += size ** 2 - 3 * (size - 1)
-
-    sum_diagonals = sum(diagonals.values()) + 1
-    return sum_diagonals
+        for n in range(0, 4):
+            diagonals += size ** 2 - n * (size - 1)
+    return diagonals
 
 
 if __name__ == '__main__':

@@ -1,7 +1,9 @@
 import time
 
+from exercises.utils import long_division
 
-def exercise_026(maximum_denominator):
+
+def exercise_026(maximum_divisor):
     """
     A unit fraction contains 1 in the numerator. The decimal representation of
     the unit fractions with denominators 2 to 10 are given:
@@ -21,20 +23,25 @@ def exercise_026(maximum_denominator):
     Find the value of d < 1000 for which 1/d contains the longest recurring
     cycle in its decimal fraction part.
 
-    :param maximum_denominator: Maximum denominator
-    :type maximum_denominator: int
+    :param maximum_divisor: Maximum divisor
+    :type maximum_divisor: int
 
-    :return: Denominator with the longest recurring cycle.
+    :return: Divisor with the longest recurring cycle.
     :rtype: int
     """
 
-    pass
+    cycle_divisor = {}
+    for d in range(1, maximum_divisor):
+        div = long_division(1, d)
+        cycle = div.split("(")
+        cycle_divisor[d] = len(cycle[-1]) - 1 if len(cycle) == 2 else 0
+    return max(cycle_divisor, key=cycle_divisor.get)
 
 
 if __name__ == '__main__':
 
     start_time = time.time()
-    n_digits = 10
-    print(exercise_026(n_digits))
+    maximum_divisor = 1000
+    print(exercise_026(maximum_divisor))
     end_time = time.time()
     print('{} s'.format(end_time - start_time))

@@ -318,6 +318,25 @@ def test_exercise_025():
     check_time_exercises(exercise_function, n_digits)
 
 
+def test_exercise_026():
+    exercise_function = exercises.exercise_026
+
+    n_digits = 1000
+    solution = exercise_function(n_digits)
+    assert solution == 983
+
+    check_time_exercises(exercise_function, n_digits)
+
+
+def test_exercise_027():
+    exercise_function = exercises.exercise_027
+
+    solution = exercise_function()
+    assert solution == -59231
+
+    check_time_exercises(exercise_function)
+
+
 def test_exercise_028():
     exercise_function = exercises.exercise_028
 
@@ -379,6 +398,16 @@ def test_exercise_034():
     assert solution == 40730
 
     check_time_exercises(exercise_function)
+
+
+def test_exercise_035():
+    exercise_function = exercises.exercise_035
+
+    maximum_number = 1000000
+    solution = exercise_function(maximum_number)
+    assert solution == 55
+
+    check_time_exercises(exercise_function, maximum_number)
 
 
 def test_exercise_036():
@@ -480,5 +509,59 @@ def test_exercise_049():
     solution = exercise_function()
     assert "".join(map(str, solution[0])) == "148748178147"
     assert "".join(map(str, solution[1])) == "296962999629"
+
+    check_time_exercises(exercise_function)
+
+
+def test_exercise_052():
+    exercise_function = exercises.exercise_052
+
+    solution = exercise_function()
+    assert solution == 142857
+
+    check_time_exercises(exercise_function)
+
+
+def test_exercise_053():
+    exercise_function = exercises.exercise_053
+
+    solution = exercise_function()
+    assert solution == 4075
+
+    check_time_exercises(exercise_function)
+
+
+def test_exercise_054():
+    exercise_function = exercises.exercise_054
+
+    solution = exercise_function()
+    assert solution == 376
+
+    check_time_exercises(exercise_function)
+
+
+def test_exercise_056():
+    exercise_function = exercises.exercise_056
+
+    solution = exercise_function()
+    assert solution == 972
+
+    check_time_exercises(exercise_function)
+
+
+def test_exercise_057():
+    exercise_function = exercises.exercise_057
+
+    solution = exercise_function()
+    assert solution == 153
+
+    check_time_exercises(exercise_function)
+
+
+def test_exercise_058():
+    exercise_function = exercises.exercise_058
+
+    solution = exercise_function()
+    assert solution == 26241
 
     check_time_exercises(exercise_function)
