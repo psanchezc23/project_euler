@@ -4,6 +4,7 @@ import numpy as np
 def is_prime(number):
     """
     This function returns if a number is prime or not.
+
     :param number: Number to check if it's prime or not.
     :type number: int
 
@@ -11,7 +12,9 @@ def is_prime(number):
     :rtype: bool
     """
 
-    if number == 1:
+    if number < 1:
+        return False
+    elif number == 1:
         return False
     elif number < 4:  # 2 and 3 are primes
         return True
@@ -55,6 +58,10 @@ def range_product(lo, hi):
     return lo * hi
 
 
+def factorial(number):
+    return range_product(1, number)
+
+
 def large_sum(number_1, number_2):
     """
     Sum of two large numbers
@@ -76,3 +83,19 @@ def large_sum(number_1, number_2):
         final_sum += str(carry)
 
     return final_sum[::-1]
+
+
+def long_division(dividend, divisor):
+    quotient, rem = divmod(dividend, divisor)
+    dec = ""
+    dividends = []
+    while rem not in dividends and rem != 0:
+        dividends.append(rem)
+        rem *= 10
+        quot, rem = divmod(rem, divisor)
+        dec += str(quot)
+
+    if rem != 0:
+        cycle_index = dividends.index(rem)
+        dec = "{}({})".format(dec[:cycle_index], dec[cycle_index:])
+    return "{}.{}".format(quotient, dec)

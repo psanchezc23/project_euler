@@ -1,6 +1,6 @@
 import time
 
-from exercises.utils import range_product
+from exercises.utils import factorial
 
 
 def exercise_020(number):
@@ -22,9 +22,9 @@ def exercise_020(number):
 
     if number < 2:
         return 1
-    factorial = range_product(1, number)
-    factorial_digits = list(map(int, list(str(factorial))))
-    return sum(factorial_digits)
+    number_factorial = factorial(number)
+    number_factorial_digits = list(map(int, list(str(number_factorial))))
+    return sum(number_factorial_digits)
 
 
 if __name__ == '__main__':

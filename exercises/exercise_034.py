@@ -1,6 +1,6 @@
 import time
 
-from exercises.utils import range_product
+from exercises.utils import factorial
 
 
 def exercise_034():
@@ -16,7 +16,7 @@ def exercise_034():
     :rtype: int
     """
 
-    digits_factorial = {str(k): range_product(1, k) for k in range(1, 10)}
+    digits_factorial = {str(k): factorial(k) for k in range(1, 10)}
     digits_factorial["0"] = 1
 
     maximum_number = digits_factorial["9"] * 7
