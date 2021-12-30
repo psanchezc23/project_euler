@@ -391,6 +391,24 @@ def test_exercise_031():
     check_time_exercises(exercise_function, coins_sum)
 
 
+def test_exercise_032():
+    exercise_function = exercises.exercise_032
+
+    solution = exercise_function()
+    assert solution == 45228
+
+    check_time_exercises(exercise_function)
+
+
+def test_exercise_033():
+    exercise_function = exercises.exercise_033
+
+    solution = exercise_function()
+    assert solution == 100
+
+    check_time_exercises(exercise_function)
+
+
 def test_exercise_034():
     exercise_function = exercises.exercise_034
 
@@ -425,6 +443,15 @@ def test_exercise_037():
 
     solution = exercise_function()
     assert solution == 748317
+
+    check_time_exercises(exercise_function)
+
+
+def test_exercise_038():
+    exercise_function = exercises.exercise_038
+
+    solution = exercise_function()
+    assert solution == 932718654
 
     check_time_exercises(exercise_function)
 
@@ -563,5 +590,32 @@ def test_exercise_058():
 
     solution = exercise_function()
     assert solution == 26241
+
+    check_time_exercises(exercise_function)
+
+
+def test_exercise_059():
+    exercise_function = exercises.exercise_059
+
+    solution = exercise_function()
+    assert solution == 129448
+
+    check_time_exercises(exercise_function)
+
+
+def test_exercise_063():
+    exercise_function = exercises.exercise_063
+
+    solution = exercise_function()
+    assert solution == 49
+
+    check_time_exercises(exercise_function)
+
+
+def test_exercise_067():
+    exercise_function = exercises.exercise_067
+
+    solution = exercise_function()
+    assert solution == 7273
 
     check_time_exercises(exercise_function)
